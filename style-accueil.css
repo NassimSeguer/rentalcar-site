@@ -96,7 +96,7 @@ header .Nom_du_site span {
         padding: 5px 25px;
 }
 
-/*La partie de l'acceuil*/
+/*La partie de l'accueil*/
 #Accueil {
     margin-top: 50px;
     height: calc(100vh - 50px);
@@ -540,6 +540,25 @@ section {
     color: #00aaff;
 }
 
+/* Mention visible sur toutes les pages : le site est fictif */
+.mention-fictif {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: #0078d7;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+}
+
+.footer {
+    padding-bottom: 40px;
+}
+
 .footer-logo {
     margin-top: 10px;
     max-width: 100px;
@@ -548,7 +567,7 @@ section {
 
 
 
-/*poir les petits ecrans*/
+/* pour les petits écrans */
 @media (max-width:682px) {
     header {
         padding: 0 10px;
@@ -557,27 +576,28 @@ section {
         display: none;
     }
     #Accueil {
+        height: auto;
         padding:  0 10px;
         justify-content: center;
         flex-direction: column;
     }
-     #Accueil .left ,   #Accueil .right {
+     #Accueil .Presentation ,   #Accueil .Illustration {
         width: 100%;
     }
     #Accueil h1 {
         margin-top: 100px;
     }
-    .right {
-        margin-top: 50px;
-        width: 60%;
+    #Accueil .Illustration {
+        margin-top: 30px;
     }
-    .images li {
-        width: 100%;
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    #Services {
+    #services {
         padding: 0 10px;
     }
-    .service {
+    .carte {
         width: 100%;
     }
     #Contact {
@@ -589,10 +609,11 @@ section {
         width: 100%;
     }
     .localisation{
+        overflow-x: auto;
         width: 100%;
         margin-bottom: 30px;
     }
-    .localisation_Contact_div .form_Contact {
+    .localisation_Contact_div .Contacter {
         width: 100%;
         
     }
@@ -616,6 +637,7 @@ section {
         width: 0px;
     }
     .Menu::before {
+        top: 12px;
         position: absolute;
         content: "";
         width: 20px;
@@ -626,10 +648,13 @@ section {
         transition: 0.5s;
     }
     .Menu.active::before {
+        top: 22.5px;
+        transform: rotate(45deg);
         width: 28px;
         
     }
     .Menu::after {
+        bottom: 12px;
         position: absolute;
         content: "";
         width: 20px;
@@ -639,16 +664,19 @@ section {
         transition: 0.5s;
     }
     .Menu.active::after {
+        bottom: 22.5px;
+        transform: rotate(-45deg);
         width: 28px;
         
     }
     header .menu.responsive {
         position: absolute;
-        top: 50px;
+        top: 60px;
         left: 0;
         display: flex;
         width: 100%;
-        height: 50px;
+        height: auto;
+        padding: 10px 0;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;

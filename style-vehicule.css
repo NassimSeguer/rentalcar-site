@@ -160,7 +160,7 @@ h2 {
     border: 1px solid #dee2e6;
 }
 
-.grille_assuranceth {
+.grille_assurance th {
     background-color: #343a40;
     color: #ffffff;
     font-size: 16px;
@@ -193,7 +193,7 @@ h2 {
 }
 
 .car-img:hover {
-    transform: scale(1.50); /* Agrandit l'image de 20% lorsqu'on passe la souris dessus */
+    transform: scale(1.50); /* Agrandit l'image de 50% lorsqu'on passe la souris dessus */
 }
 
 
@@ -235,6 +235,25 @@ main {
 
 .footer-content strong {
     color: #00aaff;
+}
+
+/* Mention visible sur toutes les pages : le site est fictif */
+.mention-fictif {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: #0078d7;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+}
+
+.footer {
+    padding-bottom: 40px;
 }
 
 .footer-logo {
