@@ -1,0 +1,442 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+     
+     background-size: cover; 
+     background-repeat: no-repeat; 
+    background-position: center; 
+    margin: 0; 
+     
+
+}
+html{scroll-behavior: smooth;}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    height: 40px;
+    box-shadow: 0 0 10px 0 black;
+}
+.bouton-retour {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0078d7;
+    color: #fff;
+   
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    height: 40px;
+}
+
+.bouton-retour:hover {
+    background-color: #005bb5;
+    cursor: pointer;
+}
+.logo_du_site{
+    background-color: #6495ED;
+    margin-left:0 ;
+    height: 40px;
+}
+header .Nom_du_site {
+    color: #6495ED;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+}
+header .Nom_du_site span {
+    color: #000;
+}
+
+    nav {
+        display: flex; 
+        justify-content: space-around; 
+        align-items: center; 
+        padding: 10px;
+      }
+      
+      nav a {
+        color: white; 
+        text-decoration: none; 
+        padding: 10px 20px; 
+      }
+      
+      nav a:hover {
+      
+        border-radius: 5px; 
+      }
+
+.menu {
+    display: flex;
+}
+.menu li {
+    list-style: none;
+    margin: 0 15px;
+}
+.menu li a {
+    font-size: 15px;
+    color: #000;
+    font-weight: 300;
+    transition: 0.2s;
+}
+.Metz-Paris {
+    width: 50%;
+}
+.Metz-Paris h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.Metz-Paris span {
+    color: #6495ED;
+}
+.Metz-Paris p {
+    margin-bottom: 30px;
+    color: #999;
+    font-size: 15px;
+}
+.Metz-Paris{
+     
+        background-color: #6495ED;
+        padding: 10px 20px;
+        font-size: 15px;
+        color: #fff;
+        transition: 0.5s;}
+
+    
+    .Metz-Paris:hover {
+        background-color: #000;
+}
+.non-disponible-container {
+    background-color: #f44336;
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.non-disponible-text {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* Styliser le formulaire globalement */
+form.reservation {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styliser les labels */
+form.reservation label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Styliser les inputs et les selects */
+form.reservation input,
+form.reservation select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Désactiver les options */
+form.reservation select option:disabled {
+    color: #888;
+}
+
+/* Styliser les sections */
+form.reservation .adresse,
+form.reservation .dates,
+form.reservation .Metz-Paris {
+    margin-bottom: 20px;
+}
+
+/* Alignement pour les dates */
+form.reservation .dates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+form.reservation .date {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Radio buttons et labels */
+form.reservation input[type="radio"] {
+    margin-right: 5px;
+}
+
+form.reservation p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Lien vers les agences */
+form.reservation .Metz-Paris a {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+form.reservation .Metz-Paris a:hover {
+    color: #0056b3;
+}
+
+/* Bouton de soumission */
+form.reservation button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+form.reservation button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #6495ED;}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1; 
+}
+.conteneur-services {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+.liste-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+.carte-service {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carte-service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.carte-service h2 {
+    font-size: 1.5em;
+    color:#6495ED;
+    margin-bottom: 10px;}
+
+
+
+.carte-service p {
+    font-size: 1em;
+    color:#6495ED;
+    line-height: 1.5;
+}
+
+
+.details-services {
+    margin-top: 40px;
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: center;
+    color:#6495ED;
+    
+}
+#Vehicules_Metz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#Vehicules_Lux_Metz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#Vehicules_Paris {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#Vehicules_Lux_Paris {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;  
+    margin-bottom: 20px; 
+}
+.lien-voiture {
+    text-decoration: none; 
+    color: inherit;        
+    display: block;        
+}
+
+.Les_marques {
+    
+    background-color: #1a1a1a;
+    color: white;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.Les_marques img {
+    width: 300px;  
+    height: 150px; 
+    object-fit: cover; 
+
+
+}
+
+.Les_marques {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right:5px ;
+}
+.titres {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color:white;
+}
+.type_de_Vehicules {
+    font-size: 14px;
+    color: #a0a0a0;
+    margin: 5px 0 20px;
+}
+
+.km {
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+.prix {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4caf50;
+}
+.Les_marques:hover {
+    transform: scale(1.20); 
+}
+.reservation-message {
+   
+    
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Style du titre */
+.reservation-message h1 {
+    color: #d32f2f;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style du paragraphe */
+.reservation-message p {
+    color: #555;
+    font-size: 1.2rem;}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-content strong {
+    color: #00aaff;
+}
+
+.footer-logo {
+    margin-top: 10px;
+    max-width: 100px;
+}
+

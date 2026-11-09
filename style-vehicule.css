@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins" , sans-serif;
+    box-sizing: border-box;
+    transition: all.2s linear;
+    text-decoration: none;
+    border: none;
+}
+html {
+    
+    scroll-padding-top: 7em;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    height: 50px;
+    box-shadow: 0 0 10px 0 black;
+    margin-left: 0px;
+}
+nav {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 20px; 
+  }
+  
+  nav a:hover {
+  
+    border-radius: 5px; 
+  }
+.bouton-retour {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0078d7;
+    color: #fff;
+   
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    height: 40px;
+}
+
+.bouton-retour:hover {
+    background-color: #005bb5;
+    cursor: pointer;
+}
+.logo_du_site{
+    background-color: #6495ED;
+    margin-left:0 ;
+    height: 40px;
+}
+header .Nom_du_site {
+    color: #6495ED;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+}
+header .Nom_du_site span {
+    color: #000;
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    list-style: none;
+    margin: 0 15px;
+}
+.menu li a {
+    font-size: 15px;
+    color: #000;
+    font-weight: 300;
+    transition: 0.2s;
+}
+h1 {
+    margin: 0;
+}
+
+/* Les Gammes */
+#BMW_2 {
+    margin-top: 40px; 
+}
+
+
+
+.Les_Gamme {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px; 
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* grille_tarifaire */
+.grille_tarifaire {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.grille_tarifaire th, .grille_tarifaire td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.grille_tarifaire th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.grille_tarifaire tr:hover {
+    background-color: #f1f1f1;
+}
+
+.grille_tarifaire td {
+    color: #555;
+}
+
+.grille_tarifaire td:first-child {
+    font-weight: bold;
+}
+.grille_assurance th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+.grille_assuranceth {
+    background-color: #343a40;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+
+
+.grille_assurance tr:hover {
+    background-color: #e9ecef;
+}
+
+.grille_assurance td {
+    font-size: 14px;
+}
+
+/* Style pour la légende */
+.grille_assurance caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Image */
+.car-img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /*  zoom fluide */
+}
+
+.car-img:hover {
+    transform: scale(1.50); /* Agrandit l'image de 20% lorsqu'on passe la souris dessus */
+}
+
+
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    list-style-type: disc;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1; /*  pousse le footer vers le bas */
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-content strong {
+    color: #00aaff;
+}
+
+.footer-logo {
+    margin-top: 10px;
+    max-width: 100px;
+}
+
+
+/*  pour les petits écrans */
+@media (max-width: 768px) {
+    .brand-section {
+        width: 90%;
+    }
+
+    .pricing-table {
+        font-size: 14px;
+    }
+}

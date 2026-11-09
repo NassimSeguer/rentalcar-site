@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - RentalCar</title>
+    <link rel="stylesheet" href="style-formulaire.css">
+</head>
+<body>
+    <header> 
+       
+        
+        <div class="Menu">
+            <span></span>
+        </div>
+        <a href="Rental_Car_acceuil.html" class="bouton-retour">Retour à l'accueil</a>
+        <div class="logo_du_site"><img src="images/logo-removebg-preview.png" alt="logo" 	width="70" 	height="50"   ></div>
+        <div class="Nom_du_site">
+            <p><span>Rental</span>Car</p>
+        </div>
+        <nav>
+        <ul class="menu">
+            
+            <li><a href="#Metz">Metz</a></li>
+            <li><a href="#Paris">Paris</a></li>
+            
+            <li><a href="#Lyon">Lyon</a></li>
+            <li><a href="#Marseille">Marseille</a></li>
+        
+            
+        </ul>
+          </nav>
+       
+    </header>
+    <main>
+    <div class="reservation-container">
+        
+        <div class="type-vehicule">
+            <button class="bouton">Véhicules</button>
+           
+        </div>
+
+      
+        <form class="reservation">
+           
+            <div class="adresse">
+                <label for="location">Retrait et retour</label>
+                <select id="location" name="location">
+                    <option value="metz">Metz 18 Place Saint-Jacques, 57000 </option>
+                    <option disabled="disabled" >Lyon 12 Rue de la République, 69002</option>
+                    <option value="paris">Paris 15 Avenue des Champs-Élysées, 75008</option>
+                    <option disabled="disabled" >Marseille 5 Quai des Belges, 13001</option>
+                </select>
+           
+            </div>
+
+            
+            <div class="dates">
+                <div class="date">
+                    <label for="date-depart">Date de départ</label>
+                    <input type="date" id="date-depart" value="2024-12-10">
+                    <input type="time" id="debut-temps" value="12:30">
+                </div>
+                <div class="date">
+                    <label for="date-fin">Date de retour</label>
+                    <input type="date" id="date-fin" value="2024-12-25">
+                    <input type="time" id="fin-du-temps" value="08:30">
+                </div>
+                <p>C'est votre première location ?</p>
+    <input type="radio" id="oui" name="premiere_location" value="oui" required>
+    <label for="oui">Oui</label>
+    
+    <input type="radio" id="non" name="premiere_location" value="non">
+    <label for="non">Non</label><br><br>
+            </div>
+
+            <div class="Metz-Paris">
+            <a href="#Metz">Nos disponibilités dans l'agence de Metz</a><br>
+            
+            <a href="#Paris">Nos disponibilités dans l'agence de Paris</a>
+        </div>
+        <button type="submit">Envoyer</button>
+        </form>
+    </div>
+    <section class="conteneur-services">
+        <h1 class="titre-section">Nos Services Exclusifs</h1>
+        <div class="liste-services">
+            <div class="carte-service">
+                <h2>Dépannage 24/7</h2>
+                <p>
+                    Roulez en toute sérénité grâce à notre assistance dépannage disponible 24h/24 et 7j/7, en France et dans les pays voisins. En cas d’urgence, notre équipe est à votre service.
+                </p>
+            </div>
+            <div class="carte-service">
+                <h2>Nettoyage Professionnel</h2>
+                <p>
+                    Optez pour notre service de nettoyage professionnel et restituez votre véhicule dans un état impeccable, sans aucun effort supplémentaire.
+                </p>
+            </div>
+            <div class="carte-service">
+                <h2>Carburant Simplifié</h2>
+                <p>
+                    Simplifiez votre retour grâce à notre option de ravitaillement. Pas besoin de vous soucier du plein de carburant, on s'en occupe pour vous !
+                </p>
+            </div>
+        </div>
+        <h1 class="titre-section">Assurances et Disponibilités</h1>
+        <div class="details-services">
+            <p>
+                Profitez de nos différentes options d'assurance, allant de la protection basique à la protection complète. Adaptez votre choix à vos besoins et à votre budget.
+            </p>
+            <p>
+                Vérifiez dès maintenant la disponibilité des véhicules sur notre site, et réservez votre voiture de rêve en quelques clics !
+            </p>
+        </div>
+        </section>
+        <div id="Metz"></div>
+    
+    
+    <section id="Vehicules_Metz">
+        
+        <h1 class="titre">Nos Vehicules Sportifs Disponible à Metz </h1>
+        <div class="container">
+            
+            <div class="Les_marques">
+                <a href="Rental_Car_Vehicule.html#BMW" class="lien-voiture"></a>
+                <img src="images/serie3.jpg" alt="Voiture">
+                <div class="Contenu_Gamme">
+                    <h2 class="titres">BMW Serie 3 </h2>
+                    <p class="type_de_Vehicules">Compact Berline en Boite Manuelle</p>
+
+                    <p class="km">✔ Kilométrage illimité</p>
+                    <p class="prix">Prix : <br>149,99 € /jour</p>
+                
+                </div>
+                </div>
+            
+    
+            
+            <div class="Les_marques">
+                <a href="Rental_Car_Vehicule.html#AUDI" class="lien-voiture"></a>
+                <img src="images/a3.jpg" alt="Voiture">
+                <div class="Contenu_Gamme">
+                    <h2 class="titres"> Audi A3 </h2>
+                    <p class="type_de_Vehicules">Compact Berline en Boite Manuelle</p>
+                    
+                    </div>
+                    <p class="km">✔ Kilométrage illimité</p>
+                    <p class="prix">Prix:  <br>149,99 € /jour</p>
+                </div>
+        
+
+                <div class="Les_marques">
+                    <div class="non-disponible-container">
+                        <span class="non-disponible-text">NON DISPONIBLE</span>
+                    </div>
+                    <a href="Rental_Car_Vehicule.html#Merco" class="lien-voiture"></a>
+                    <img src="images/mercedes-acceuil.jpg" alt="Voiture">
+                    <div class="Contenu_Gamme">
+                        <h2 class="titres">Mercedes CLA </h2>
+                        <p class="type_de_Vehicules">Compact Berline Automatique </p>
+                
+                        <p class="km">✔ Kilométrage illimité</p>
+                        <p class="prix">A partir de <br>99,99 € /jour</p>
+                        
+                    
+                    
+            </div>
+        </div>
+        </div>
+    
+</section>
+
+<section id="Vehicules_Lux_Metz">
+    <h1 class="titre">Nos Vehicules Luxueux Disponible à Metz </h1>
+    <div class="container">
+        
+        <div class="Les_marques">
+            <div class="non-disponible-container">
+                <span class="non-disponible-text">NON DISPONIBLE</span>
+            </div>
+            <a href="Rental_Car_Vehicule.html#Bentley" class="lien-voiture"></a>
+               
+            <img src="images/Bentley.jpg" alt="Voiture">
+            <div class="Contenu_Gamme">
+                <h2 class="titres">Bentley Bentayga </h2>
+                <p class="type_de_Vehicules">SUV de luxe</p>
+
+                <p class="km">✔ Kilométrage illimité</p>
+                <p class="prix">Prix : <br>599,99 € /jour</p>
+            
+            </div>
+        </div>
+
+        
+        <div class="Les_marques">
+            <a href="Rental_Car_Vehicule.html#Lamborghini" class="lien-voiture"></a>
+            <img src="images/voiture_acceuil.jpg" alt="Voiture">
+            <div class="Contenu_Gamme">
+                <h2 class="titres"> Lamborghini Aventador </h2>
+                <p class="type_de_Vehicules">Coupé Sportif De Luxe</p>
+                
+                </div>
+                <p class="km">✔ Kilométrage illimité</p>
+                <p class="prix">Prix:  <br>1449,99 € /jour</p>
+            </div>
+        
+
+          
+                
+        </div>
+    
+    <div id="Paris"></div>
+</section>
+
+
+<section id="Vehicules_Paris">
+    
+    <h1 class="titre">Nos Vehicules Sportifs Disponible à Paris </h1>
+    <div class="container">
+        
+        <div class="Les_marques">
+            <a href="Rental_Car_Vehicule.html#BMW" class="lien-voiture"></a>
+            <img src="images/x5.jpg" alt="Voiture">
+            <div class="Contenu_Gamme">
+                <h2 class="titres">BMW X5 </h2>
+                <p class="type_de_Vehicules">Compact Berline en Boite Manuelle</p>
+
+                <p class="km">✔ Kilométrage illimité</p>
+                <p class="prix">Prix : <br>149,99 € /jour</p>
+            
+            </div>
+        </div>
+        
+
+        
+        <div class="Les_marques">
+            <a href="Rental_Car_Vehicule.html#AUDI" class="lien-voiture"></a>
+            <img src="images/audi-acceuil.jpg" alt="Voiture">
+            <div class="Contenu_Gamme">
+                <h2 class="titres"> Audi R8 </h2>
+                <p class="type_de_Vehicules">Compact Berline en Boite Manuelle</p>
+                
+                </div>
+                <p class="km">✔ Kilométrage illimité</p>
+                <p class="prix">Prix:  <br>149,99 € /jour</p>
+            </div>
+        
+
+            <div class="Les_marques">
+                <div class="non-disponible-container">
+                    <span class="non-disponible-text">NON DISPONIBLE</span>
+                </div>
+                <a href="Rental_Car_Vehicule.html#Merco" class="lien-voiture"></a>
+                <img src="images/glc.jpg" alt="Voiture">
+                <div class="Contenu_Gamme">
+                    <h2 class="titres">Mercedes GLC </h2>
+                    <p class="type_de_Vehicules">SUV sportif </p>
+            
+                    <p class="km">✔ Kilométrage illimité</p>
+                    <p class="prix">A partir de <br>99,99 € /jour</p>
+                    
+                </div>
+                
+        </div>
+    </div>
+
+</section>
+
+<section id="Vehicules_Lux_Paris">
+<h1 class="titre">Nos Vehicules Luxueux Disponible à Paris </h1>
+<div class="container">
+    
+    <div class="Les_marques">
+        <div class="non-disponible-container">
+            <span class="non-disponible-text">NON DISPONIBLE</span>
+        </div>
+        <a href="Rental_Car_Vehicule.html#Ferrari" class="lien-voiture"></a>
+           
+        <img src="images/488.jpg" alt="Voiture">
+        <div class="Contenu_Gamme">
+            <h2 class="titres">Ferrair 488 GTB </h2>
+            <p class="type_de_Vehicules">SUV de luxe</p>
+
+            <p class="km">✔ Kilométrage illimité</p>
+            <p class="prix">Prix : <br>1299,99 € /jour</p>
+        
+        </div>
+    </div>
+
+    
+    <div class="Les_marques">
+        <a href="Rental_Car_Vehicule.html#AUDI" class="lien-voiture"></a>
+        <img src="images/voiture_acceuil.jpg" alt="Voiture">
+        <div class="Contenu_Gamme">
+            <h2 class="titres"> Lamborghini Aventador </h2>
+            <p class="type_de_Vehicules">Coupé Sportif De Luxe</p>
+            
+            </div>
+            <p class="km">✔ Kilométrage illimité</p>
+        </div>
+    
+
+      
+            
+    </div>
+
+
+</section>
+<div id="Lyon">
+    <div id="Marseille"></div>
+</div>
+<div class="reservation-message">
+    <h1>🚗 Toutes nos voitures de location à Lyon et Marseille sont déjà réservées !</h1>
+    <p>Nous vous remercions de votre compréhension et vous invitons à consulter la disponibilité dans nos autres agences.</p>
+</div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>
+                Réalisé par <strong>Seguer Nassim</strong>, étudiant à l'UFR MIM de Metz, élève de <strong>M. Bertolo</strong>.
+            </p>
+            <img src="images/logo-removebg-preview.png" alt="Logo " class="footer-logo"><img src="images/LogoUL.jpg" alt="Logo UFR MIM" class="footer-logo">
+        </div>
+    </footer>
+
+</body>
+</html>

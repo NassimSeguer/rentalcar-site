@@ -1,0 +1,111 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 20px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres des sections */
+h2 {
+    color: #444;
+}
+
+/* Boutons */
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Section "Créateur du site" */
+#createur {
+    text-align: center;
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#createur h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#createur p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1; 
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-content strong {
+    color: #00aaff;
+}
+
+.footer-logo {
+    margin-top: 10px;
+    max-width: 100px;
+}
