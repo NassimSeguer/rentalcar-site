@@ -31,7 +31,9 @@
 
 ## 🚀 Voir le site
 
-Aucune installation n'est nécessaire : il suffit d'ouvrir `index.html` dans un navigateur.
+**[Ouvrir le site en ligne](https://nassimseguer.github.io/rentalcar-site/)**
+
+Pour le consulter sur son ordinateur, il suffit d'ouvrir `index.html` dans un navigateur : aucune installation n'est nécessaire.
 
 ## 🗂️ Organisation
 
